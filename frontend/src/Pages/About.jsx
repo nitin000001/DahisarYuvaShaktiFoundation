@@ -91,7 +91,7 @@ const About = () => {
             Your browser does not support the video tag.
           </video>
           <a
-      href="https://www.instagram.com/___nitz__________?igsh=MXVuZzdxN3Y2dzE1Mw=="
+      href="https://www.instagram.com/dahisar_yuvashakti_foundation?igsh=MXYwcHZyMTB6ZWVjYw=="
       target="_blank"
       rel="noopener noreferrer"
       className="hover:text-black hover:bg-blue-500 transition inline-block bg-blue-600 text-white py-2 px-4 rounded-lg"

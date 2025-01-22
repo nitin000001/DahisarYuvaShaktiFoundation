@@ -9,6 +9,9 @@ import bhai3 from "../assets/videos/bhai3.mp4";
 import bhai4 from "../assets/videos/bhai4.mp4";
 import education from "../assets/images/education.avif";
 import data from "../assets/data";
+import bhaiBlancket from "../../public/BhaiBlancket.jpeg"
+import bhaiChild from "../../public/BhaiChild.jpeg"
+import group from "../../public/group.jpeg"
 
 const OurWork = () => {
   return (
@@ -36,13 +39,18 @@ const OurWork = () => {
             className="w-full h-64 object-cover rounded-lg shadow-md"
           />
           <img
-            src={founder}
+            src={bhaiBlancket}
             alt="Activity 2"
             className="w-full h-64 object-cover rounded-lg shadow-md"
           />
           <img
-            src={child}
+            src={bhaiChild}
             alt="Activity 3"
+            className="w-full h-64 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src={group}
+            alt="Activity 4"
             className="w-full h-64 object-cover rounded-lg shadow-md"
           />
         </div>
@@ -80,23 +88,25 @@ const OurWork = () => {
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {data.map((item, index) => (
-    <div key={index} className="relative bg-white p-6 rounded-lg shadow-lg group">
-      <img
-        src={item.image}
-        alt={item.name}
-        className="w-32 h-32 mx-auto rounded-full mb-4 object-cover object-center mt-9 hover:scale-125 duration-300 cursor-pointer"
-      />
-      <h4 className="text-xl font-bold text-center mb-2 group-hover:blur-sm">
-        {item.name}
-      </h4>
-      <p className="text-center text-gray-700 group-hover:blur-sm">
-        {item.description}
-      </p>
-    </div>
-  ))}
-</div>
-
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="relative bg-white p-6 rounded-lg shadow-lg group"
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-32 h-32 mx-auto rounded-full mb-4 object-cover object-center mt-9 hover:scale-125 duration-300 cursor-pointer"
+              />
+              <h4 className="text-xl font-bold text-center mb-2 group-hover:blur-sm">
+                {item.name}
+              </h4>
+              <p className="text-center text-gray-700 group-hover:blur-sm">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
